@@ -1,0 +1,11 @@
+[default]
+TITLE = 'CRUD Flask'
+SQLALCHEMY_DATABASE_URI = 'sqlite:///development.db'
+SECRET_KEY = "jadkfbsdkjbfbh"
+FLASK_ADMIN_SWATCH = 'cerulean'
+EXTENSIONS = [
+  "src.ext.database:init_app",
+  "src.ext.admin:init_app",
+  "src.models:init_app",
+  "src.restapi:init_app",
+]
